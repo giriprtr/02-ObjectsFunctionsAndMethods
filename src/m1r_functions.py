@@ -6,6 +6,13 @@
 #
 ###############################################################################
 
+# It will print the following
+# Hello, Snow White - how are things?
+# Goodbye, Bashful, - see you later!
+#      Ciao!
+#      Bai bai!
+# Hello
+
 
 def main():
     hello("Snow White")
