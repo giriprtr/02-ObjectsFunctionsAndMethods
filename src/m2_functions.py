@@ -21,10 +21,12 @@ import rosegraphics as rg
 
 
 def main():
+
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
+
 
 
 ###############################################################################
@@ -50,8 +52,9 @@ def main():
      pyth(3,4)
 
 
+
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# Done: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -77,6 +80,21 @@ def main():
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+
+def thing(a,b):
+    window = rg.TurtleWindow()
+    window.tracer(70)
+    joe = rg.SimpleTurtle('turtle')
+    joe.pen = rg.Pen('green', b)
+    jim = rg.SimpleTurtle('turtle')
+    jim.pen = rg.Pen(a, 5)
+    joe.forward(100)
+    jim.forward(-100)
+    window.close_on_mouse_click()
+
+def main():
+    thing('red', 5)
+
 
 
 ###############################################################################
