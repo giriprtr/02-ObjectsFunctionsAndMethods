@@ -25,7 +25,10 @@ def main():
     draw_circles(rg.Point(-200, 0))
     better_draw_circles(rg.Point(0, 0), 10)
     better_draw_circles(rg.Point(30, 40), 6)
-    even_better_draw_circles(rg.Point(50, 100), 'blue', 5, 9, 12)
+    even_better_draw_circles(rg.Point(300, 100), 'blue', 5, 9, 12)
+    even_better_draw_circles(rg.Point(663, 787), 'red', 3, 9, 12)
+    even_better_draw_circles(rg.Point(50, 100), 'magenta', 8, 10, 20)
+    even_better_draw_circles(rg.Point(-100, -277), 'orange', 7, 34, 10)
     window.update()
     window.close_on_mouse_click()
 
@@ -148,7 +151,7 @@ def better_draw_circles(point, a):
 
 
 ###############################################################################
-# TODO: 4a.
+# DONE: 4a.
 #   In the previous _TODO_, you made a MORE POWERFUL version
 #   of   draw_circles   by introducing a new PARAMETER for the amount
 #   by which the radii of the concentric circles increase.
@@ -170,7 +173,7 @@ def better_draw_circles(point, a):
 #   to the body of the   even_better_draw_circles   function defined below.
 #   Then add parameters and modify the code to make them work!
 #
-# TODO: 4b.
+# DONE: 4b.
 #   In   main  at the place indicated, comment-out the existing calls
 #   to  better_draw_circles  and add at least two calls to the improved
 #   even_better_draw_circles  function, to TEST that your modified code is
@@ -200,7 +203,7 @@ def even_better_draw_circles(point, colo, thick, a, b):
         turtle.draw_circle(b * k)
 
         ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #
 # Finally, comment-out the existing calls to  even_better_draw_circles  and
 # add code in   main  to draw various circles that form a BEAUTIFUL picture!
