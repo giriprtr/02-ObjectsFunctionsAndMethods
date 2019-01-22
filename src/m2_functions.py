@@ -38,7 +38,7 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DOne: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -49,7 +49,10 @@ def pyth(a,b):
 
 
 def main():
-     pyth(3,4)
+     pyth(7,9)
+     turtles('red', 5)
+     pyth(5, 9)
+     turtles('blue', 7)
 
 
 
@@ -76,29 +79,28 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONE: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 
-def thing(a,b):
+def turtles(c,d):
     window = rg.TurtleWindow()
-    window.tracer(70)
     joe = rg.SimpleTurtle('turtle')
-    joe.pen = rg.Pen('green', b)
+    joe.pen = rg.Pen('green', d)
     jim = rg.SimpleTurtle('turtle')
-    jim.pen = rg.Pen(a, 5)
+    jim.pen = rg.Pen(c, 5)
     joe.forward(100)
     jim.forward(-100)
     window.close_on_mouse_click()
 
-def main():
-    thing('red', 5)
+
+
 
 
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
